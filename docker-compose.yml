@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  varnish:
+    image: cloudposse/varnish
+    environment:
+      - VARNISH_BACKEND_HOST=changeme
+      - VARNISH_BACKEND_PORT=80
+    volumes:
+      - ./conf/distant.vcl:/etc/varnish/configs/default.vcl
+    ports:
+      - 80:80
