@@ -10,6 +10,4 @@
 ## To see the varnish logs
 
 1. into a terminal : ```docker ps``` and find the varnish container name
-2. ```docker exec -ti {container name} bash```
-3. ```cd /var/lib/varnish``` and note the directory name
-4. ```varnishlog -n {directory name}```
+2. ```docker exec -ti {container_name} varnishlog```
