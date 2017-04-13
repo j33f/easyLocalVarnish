@@ -9,5 +9,4 @@
 
 ## To see the varnish logs
 
-1. into a terminal : ```docker ps``` and find the varnish container name
-2. ```docker exec -ti {container_name} varnishlog```
+```docker exec -ti varnish varnishlog```
