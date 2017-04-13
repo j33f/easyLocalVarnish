@@ -3,6 +3,7 @@ version: "2"
 services:
   varnish:
     image: cloudposse/varnish
+    container_name: varnish
     environment:
       - VARNISH_BACKEND_HOST=changeme
       - VARNISH_BACKEND_PORT=80
